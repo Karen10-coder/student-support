@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+    </head>  
+    <body>
+        <h1>Student Support Request Tracker</h1>
+
+        <form id="request-form">
+            <label for="name">Full name</label>
+            <input type="text" id="name" />
+
+            <label for="type">Request type</label>
+            <select id="type">
+                <option value="">-- Select a type --</option>
+                <option value="Academic">Academic</option>
+                <option value="Administrative">Administrative</option>
+            </select>
+            <label for="message">Describe your request</label>
+            <textarea id="message" rows="4"></textarea>
+
+            <button type="submit">Submit request</button>
+        </form>
+        <h2>Your Request</h2>
+        <p><strong>Local version:</strong>Your requests are saved on this device only.</p>
+        <ul id="request-list"></ul>
+        <script src="script.js"></script>
+    </body>
+</html>
